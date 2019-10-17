@@ -1,12 +1,9 @@
 require 'bundler'
-bundler,require
+Bundler.require
 
-require_relative 'lib/Application'
-require_relative 'lib/Board'
-require_relative 'lib/Boardcase'
-require_relative 'lib/Game'
-require_relative 'lib/Player'
-require_relative 'lib/Show'
+require_relative 'lib/boardcase'
+require_relative 'lib/player'
+require_relative 'lib/board'
+require_relative 'lib/game'
 
-#Application.new.perform
-binding.pry
+Game.new.time_to_play
